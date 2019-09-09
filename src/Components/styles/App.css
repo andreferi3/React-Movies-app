@@ -1,0 +1,305 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  background-image: url(../mountain_moon_nightscape_4k-1920x1080.jpg);
+  background-position: 50%;
+}
+
+.side-left {
+  width: 350px;
+  background-color: rgba(53, 53, 53, 0.8);
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 7px 0 14px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.logo {
+  background-color: #c35959;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.aside-mainmenu {
+  padding: 1rem 2.5rem 0 2.5rem;
+}
+
+.aside-subtitle {
+  color: #ababad;
+  margin-bottom: 2rem;
+}
+
+.aside-list-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.aside-list-menu a:hover {
+  color: #c35959;
+  transition: 0.2s;
+}
+
+.aside-user {
+  padding: 0.1rem 2.5rem 0 2.5rem;
+}
+
+.aside-left-icon {
+  margin-right: 1rem;
+}
+
+.badge-soon {
+  color: white;
+  border: 1px solid rgba(3, 206, 164, 1);
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 1px 3px;
+  margin-left: 5px;
+}
+
+.root-content {
+  background: rgba(54, 54, 54, 1);
+  width: 100%;
+  display: flex;
+  overflow: auto;
+}
+
+.root-container {
+  width: 82%;
+}
+
+.search-top {
+  width: 100%;
+}
+
+.search-top h3 {
+  margin: 0;
+  color: #868d85;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.content-title {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem 0 2rem;
+}
+
+.content-title h1 {
+  color: white;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content-subtitle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4rem;
+}
+
+.content-subtitle h5 {
+  margin: 0;
+  color: white;
+}
+
+.content-subtitle>h5>span {
+  margin-left: 8px;
+  color: #c3595b;
+ }
+
+ .content-select {
+   display: flex;
+ }
+
+.content-select>.movies {
+  padding-right: 10px;
+  border-right: 1px solid rgba(255,255,255,0.4);
+  color: #c3595b;
+}
+
+.content-select>.series {
+  padding-left: 10px;
+  color: rgba(255,255,255,0.4);
+}
+
+.root-film {
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.film-list {
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 18%);
+  grid-column-gap: 2%;
+  justify-content: center;
+}
+
+.film {
+  border-radius: 5px;
+  padding: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.image {
+  background-color: #dae1e4;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.film>h4 {
+  margin: 0;
+  margin-top: 1rem;
+  color: white;
+  white-space: nowrap;
+}
+
+.film>h6 {
+  margin: 0;
+  color: #cccecf;
+  margin-top: 3px;
+}
+
+.aside-right {
+  display: flex;
+  flex: 1;
+  background: linear-gradient(#d5d7d6, #eeeeee);
+  flex-direction: column;
+  height: 100%;
+  position: sticky;
+  right: 0;
+  top: 0;
+  overflow: auto;
+  transition: all ease-in-out 0.5s;
+}
+
+.msg-menu {
+  background-color: #c35959;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.1rem 2rem;
+}
+
+.msg-menu h3 {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+}
+
+.msg-menu>h3>.badge-notif {
+  font-size: 12px;
+  background: red;
+  border-radius: 50%;
+}
+
+.user-list {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+.user-list .user-online {
+  display: flex;
+  flex-direction: column;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.user img {
+  border-radius: 50%;
+}
+
+.user .user-detail {
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.user .user-detail h4 {
+  font-size: 1rem;
+}
+
+.user-offline {
+  opacity: 0.2;
+}
+
+.aside-right-footer {
+  background-color: #d7d7d7;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0,0,0,0.5)
+}
+
+.aside-right-footer>h4 {
+  margin: 0;
+}
+
+.aside-right-footer>h4>span {
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 1600px) {
+  .aside-right {
+    display: none;
+  }
+
+  .root-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .side-left {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .film-list {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-column-gap: 2%;
+    justify-content: center;
+  }
+}
